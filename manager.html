@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Lucca</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('imagens/fundo.jpg');
+            background-size: cover; /* Faz a imagem cobrir o fundo inteiro */
+            background-position: center; /* Centraliza a imagem */
+            background-attachment: fixed; /* Mantém a imagem fixa ao rolar a página */
+        }
+        header {
+            background-color: #aeffb550;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+           
+        }
+        .container {
+            width: 80%;
+            margin: 50px auto;
+        }
+        .section {
+            background-color: #edffe9ee;
+            padding: 30px;
+            margin-bottom: 50px;
+            border-radius: 90px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center
+        }
+        h2 {
+            color: #333;
+        }
+        p {
+            text-align: justify; /* Justifica o texto */
+            line-height: 1.6; /* Melhora a legibilidade do texto */
+        }
+        .button {
+    display: inline-block; /* Faz o botão se comportar como um bloco em linha */
+    padding: 10px 20px; /* Espaçamento interno do botão (topo e fundo: 10px, laterais: 20px) */
+    margin-top: 20px; /* Espaçamento acima do botão */
+    background-color: #4CAF50; /* Cor de fundo verde */
+    color: #fff; /* Cor do texto branco */
+    text-decoration: none; /* Remove o sublinhado do link */
+    border-radius: 20px; /* Arredonda os cantos do botão */
+    font-size: 16px; /* Tamanho da fonte */
+    transition: background-color 0.3s; /* Transição suave para a cor de fundo quando o botão é sobreposto */
+}
+        .button:hover {
+    background-color: #45a049; /* Cor de fundo verde escuro ao passar o mouse */
+}
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px; /* Tamanho do botão */
+    height: 60px;
+    border-radius: 100%; /* Faz o botão ser circular */
+    background-image: url('imagens/wapp.jpg'); /* Imagem de fundo do botão */
+    background-size: cover; /* Faz a imagem cobrir todo o botão */
+    background-position: center; /* Centraliza a imagem */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Garante que o botão fique acima de outros elementos */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.whatsapp-button::after {
+    content: ''; /* Adiciona um pseudo-elemento para criar um efeito de hover */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.3); /* Cor de fundo semitransparente para efeito hover */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.whatsapp-button:hover::after {
+    opacity: 1;
+}
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>BACKEND DEVELOPER</h1>
+    </header>
+    
+    <div class="container">
+        <!-- Área 1: Meus Dados -->
+        <section class="section">
+            <h2>Manager Time</h2>
+            <p>O Manager Time é um aplicativo desenvolvido para otimizar a gestão de horários escolares, oferecendo uma solução prática e eficiente para o cadastro de professores, alunos e horários. Com foco na organização e na praticidade, o sistema permite que os administradores realizem o registro dos professores, especificando as disciplinas lecionadas, bem como as suas respectivas disponibilidades semanais.
+
+                Além disso, o Manager Time facilita o cadastro de alunos, permitindo a formação de grupos de até seis alunos por turma. A partir desses dados, o aplicativo organiza e gera automaticamente um cronograma semanal, integrando a disponibilidade dos professores com as demandas das turmas, garantindo que as aulas sejam distribuídas de forma otimizada.
+                
+                O aplicativo não apenas simplifica a tarefa administrativa de organizar horários, como também garante que todos os dados sejam salvos e facilmente acessados para consulta ou alteração. Com uma interface amigável e funcionalidades robustas, o Manager Time se destaca como uma ferramenta essencial para escolas e instituições de ensino que buscam uma solução completa para a organização de seus horários escolares.</p>
+                
+            </section>
+            
+    <div class="container">
+        <section class="section">
+            <h2>Página inicial</h2>
+            <p>A página inicial do Manager Time apresenta uma interface amigável e intuitiva, com botões claros para facilitar a navegação. Nela, é possível encontrar as opções:
+
+                Cadastrar Professores: permite o registro dos professores e suas respectivas disciplinas.
+                Cadastrar Horários: possibilita a definição dos horários disponíveis de cada professor.
+                Cadastrar Alunos: facilita o cadastro dos alunos e o agrupamento em turmas.
+                Formular Horários: reúne todas as informações cadastradas para gerar automaticamente o cronograma escolar.
+            
+            Essa estrutura simples e funcional garante uma navegação fácil para os usuários.</p>
+            <img src="imagens/homemanager.png" alt="homemanager">
+    </div>
+
+    <div class="container">
+        <section class="section">
+            <h2>Cadastrar Professores</h2>
+            <p>O botão Cadastrar Professores na página inicial do Manager Time permite o registro rápido e eficiente dos professores. Ao clicar nele, o usuário é direcionado para uma tela onde pode inserir o nome do professor e as disciplinas que ele leciona. Além disso, há um botão adicional que possibilita a exclusão de professores pelo nome, garantindo uma fácil gestão do corpo docente. A interface simples e organizada garante que o cadastro e a exclusão de professores sejam feitos de forma intuitiva, facilitando a manutenção do sistema sem complicações.</p>
+            <img src="imagens/cadastromanager.png" alt="cadastromanager">
+    </div>
+
+    <div class="container">
+        <section class="section">
+            <h2>Cadastrar Horários</h2>
+            <p>O botão Cadastrar Horários permite que os horários semanais dos professores sejam 
+            registrados de maneira simples e eficiente. Ao acessar essa opção, o usuário pode selecionar o 
+            professor previamente cadastrado e inserir sua disponibilidade para cada dia da semana. Além 
+            disso, a interface oferece dois botões adicionais: um para excluir o horário de um professor 
+            específico e outro para remover todos os horários cadastrados no sistema, facilitando o reinício 
+            de um novo cadastro do zero. Essa flexibilidade garante uma gestão prática e organizada dos 
+            horários, mantendo o sistema sempre atualizado conforme as necessidades.</p>
+            <img src="imagens/horariosmanager.png" alt="horariosmanager">
+    </div>
+
+    <div class="container">
+        <section class="section">
+            <h2>Cadastrar Alunos</h2>
+            <p>O botão Cadastrar Alunos permite o registro dos alunos de forma prática e organizada. Ao acessar essa opção, o usuário pode inserir os nomes dos alunos e associá-los a turmas ou grupos de até seis alunos, facilitando a alocação em horários de aula. Além disso, a interface oferece um botão para excluir alunos pelo nome, tornando a gestão de cadastros ainda mais eficiente. Isso simplifica a organização das turmas e otimiza o planejamento dos horários escolares, garantindo um controle fácil e rápido sobre as informações dos alunos.</p>
+            <img src="imagens/alunosmanager.png" alt="alunosmanager">
+    </div>
+
+    <div class="container">
+        <section class="section">
+            <h2>Formular Horários</h2>
+            <p>O botão Formular Horários abre uma segunda tela indicando duas opções. O primeiro botão
+                gera os horários manualmente de forma parcialmente automatica, já o segundo botão está sendo desenvolvido
+                para gerar os horários de forma totalmente automática. O sistema terá atualizções recorrentes e na próxima versão 
+                essa funcionalidade já estará disponível.
+            </p>
+            <img src="imagens/doismanager.png" alt="doismanager">
+    </div>
+
+    <div class="container">
+        <section class="section">
+            <h2>Gerar Horários Manualmentemente</h2>
+            <p>O botão Gerar Horários Manualmente permite que o usuário crie e ajuste o cronograma escolar de forma personalizada. Ao selecionar esta opção, o usuário pode combinar as informações de professores, alunos e horários cadastrados para formar um horário semanal completo.
+
+                Além disso, a interface inclui um botão Ordenar Horários, que organiza automaticamente os horários de forma a seguir a sequência de segunda a sexta-feira, garantindo uma visualização clara e estruturada. Outro botão disponível é o Copiar Conteúdo, que facilita a cópia de todo o conteúdo dos horários para a área de transferência, simplificando o envio e a partilha das informações com outros interessados. Essas funcionalidades 
+                adicionais garantem uma gestão eficiente e uma fácil manipulação dos dados do cronograma escolar.
+                Caso também seja de interesse do usuário de alterar um dos horários, basta cadastrar novamente no mesmo dia que o cadastro será sobrescrito. Também temos a funcionalidade de que os dias que aparecem para cadastro são somente os que o professor tem disponível!
+            </p>
+            <img src="imagens/formularmanager.png" alt="formularmanager">
+            <a href="index.html" class="button">Voltar para a página inicial</a>
+            <a href="manager.html" class="button">Voltar ao topo</a>
+            <a href="https://github.com/LLommez/Manager-Time" class="button" target="_blank" rel="noopener noreferrer">Quero este app!</a>
+
+    </div>
+    
+    <a href="https://wa.me/5537984269756" class="whatsapp-button" target="_blank"></a>
+    
+    

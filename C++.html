@@ -42,12 +42,15 @@
             text-align: justify; /* Justifica o texto */
             line-height: 1.6; /* Melhora a legibilidade do texto */
         }
-        img {
-            display: block; /* Faz a imagem se comportar como um bloco para poder centralizar */
-            max-width: 50%; /* Garante que a imagem não ultrapasse a largura do contêiner */
-            height: auto; /* Mantém a proporção da imagem */
-            margin-top: 20px; /* Adiciona um espaçamento acima da imagem */
-        }
+        .image-container {
+        text-align: center; /* Centraliza as imagens no contêiner pai */
+    }
+    .I, .II {
+        display: inline-block; /* Faz com que as imagens fiquem lado a lado */
+        max-width: 40%; /* Garante que a imagem não ultrapasse a largura do contêiner */
+        height: auto; /* Mantém a proporção da imagem */
+        margin-top: 20px; /* Adiciona um espaçamento acima da imagem */
+    }
         .button {
     display: inline-block; /* Faz o botão se comportar como um bloco em linha */
     padding: 10px 20px; /* Espaçamento interno do botão (topo e fundo: 10px, laterais: 20px) */
@@ -85,8 +88,13 @@
                 
                 Eis aqui meus certificados que atestam minha competência e especialização em C++.
             </p>
-            <img src="imagens/certificado_c++.png" alt="Certificado C++">
+            <div class="image-container">
+
+                <img src="imagens/certificado_c++.png" alt="Certificado C++" class="I">
+            <img src="imagens/c++_data_types_certificado.png" alt="Certificado C++" class="II">
             <a href="index.html" class="button">Voltar para a página inicial</a>
+            </div> 
+            
         </section>
     </div>
 
