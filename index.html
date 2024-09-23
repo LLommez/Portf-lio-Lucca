@@ -64,6 +64,38 @@
             transform: translateY(-10px); /* Move o botão para cima */
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra mais intensa */
         }
+        .whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px; /* Tamanho do botão */
+    height: 60px;
+    border-radius: 100%; /* Faz o botão ser circular */
+    background-image: url('imagens/wapp.jpg'); /* Imagem de fundo do botão */
+    background-size: cover; /* Faz a imagem cobrir todo o botão */
+    background-position: center; /* Centraliza a imagem */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Garante que o botão fique acima de outros elementos */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.whatsapp-button::after {
+    content: ''; /* Adiciona um pseudo-elemento para criar um efeito de hover */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.3); /* Cor de fundo semitransparente para efeito hover */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.whatsapp-button:hover::after {
+    opacity: 1;
+}
     </style>
 </head>
 <body>
@@ -76,14 +108,14 @@
     <!-- Área 1: Meus Dados -->
     <section class="section">
         <h2>Esse sou eu!</h2>
-        <p>Bem-vindo! Meu nome é Lucca, sou especialista em C++ com conhecimento em diversas outras linguagens de programação. Ao longo da minha trajetória, venho desenvolvendo soluções inovadoras e robustas, com foco em qualidade e eficiência. Minha abordagem é pautada em aprimoramento contínuo, buscando sempre expandir meus conhecimentos e melhorar minhas habilidades. Aqui, você encontrará um portfólio do meu trabalho, que reflete meu comprometimento com a excelência técnica e minha dedicação ao desenvolvimento profissional.</p>
+        <p>Bem-vindo! Meu nome é Lucca, minha melhor linguagem é C++ e tenho conhecimento em diversas outras linguagens de programação. Ao longo da minha trajetória, venho desenvolvendo soluções inovadoras e robustas, com foco em qualidade e eficiência. Minha abordagem é pautada em aprimoramento contínuo, buscando sempre expandir meus conhecimentos e melhorar minhas habilidades. Aqui, você encontrará um portfólio do meu trabalho, que reflete meu comprometimento com a excelência técnica e minha dedicação ao desenvolvimento profissional.</p>
     </section>
 
     <!-- Área 2: Linguagens que domino -->
     <section class="section">
         <h2>Habilidades</h2>
         <div class="button-container">
-            <button onclick="location.href='#html'">HTML</button>
+            <button onclick="location.href='html.html'">HTML</button>
             <button onclick="location.href='#css'">CSS</button>
             <button onclick="location.href='#python'">Python</button>
             <button onclick="location.href='C++.html'">C++</button>
@@ -96,8 +128,10 @@
         <div class="button-container">
             <button onclick="location.href='manager.html'">Manager Time</button>
             <button onclick="location.href='#converter'">Converter</button>
-            <button onclick="location.href='#portfolio'">Portfólio</button>
+            <button onclick="window.open('https://github.com/LLommez/Portf-lio-Lucca', '_blank')">Portfólio</button>
+
         </div>
+        <a href="https://wa.me/5537984269756" class="whatsapp-button" target="_blank"></a>
     </section>
 </div>
 
