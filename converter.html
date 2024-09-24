@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Lucca</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('imagens/fundo.jpg');
+            background-size: cover; /* Faz a imagem cobrir o fundo inteiro */
+            background-position: center; /* Centraliza a imagem */
+            background-attachment: fixed; /* Mantém a imagem fixa ao rolar a página */
+        }
+        header {
+            background-color: #aeffb550;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+           
+        }
+        .container {
+            width: 80%;
+            margin: 50px auto;
+        }
+        .section {
+            background-color: #edffe9ee;
+            padding: 30px;
+            margin-bottom: 50px;
+            border-radius: 90px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center
+        }
+        h2 {
+            color: #333;
+        }
+        p {
+            text-align: justify; /* Justifica o texto */
+            line-height: 1.6; /* Melhora a legibilidade do texto */
+        }
+        .button {
+    display: inline-block; /* Faz o botão se comportar como um bloco em linha */
+    padding: 10px 20px; /* Espaçamento interno do botão (topo e fundo: 10px, laterais: 20px) */
+    margin-top: 20px; /* Espaçamento acima do botão */
+    background-color: #4CAF50; /* Cor de fundo verde */
+    color: #fff; /* Cor do texto branco */
+    text-decoration: none; /* Remove o sublinhado do link */
+    border-radius: 20px; /* Arredonda os cantos do botão */
+    font-size: 16px; /* Tamanho da fonte */
+    transition: background-color 0.3s; /* Transição suave para a cor de fundo quando o botão é sobreposto */
+}
+        .button:hover {
+    background-color: #45a049; /* Cor de fundo verde escuro ao passar o mouse */
+}
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px; /* Tamanho do botão */
+    height: 60px;
+    border-radius: 100%; /* Faz o botão ser circular */
+    background-image: url('imagens/wapp.jpg'); /* Imagem de fundo do botão */
+    background-size: cover; /* Faz a imagem cobrir todo o botão */
+    background-position: center; /* Centraliza a imagem */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Garante que o botão fique acima de outros elementos */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.whatsapp-button::after {
+    content: ''; /* Adiciona um pseudo-elemento para criar um efeito de hover */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.3); /* Cor de fundo semitransparente para efeito hover */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.whatsapp-button:hover::after {
+    opacity: 1;
+}
+
+.container {
+    max-width: 100%; /* Limita o tamanho do contêiner */
+    margin: 0 auto; /* Centraliza o contêiner na página */
+    padding: 20px;
+}
+
+.container img {
+    max-width: 80%; /* Faz com que a imagem não ultrapasse o tamanho do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Remove qualquer espaço em branco abaixo da imagem */
+    margin: 0 auto; /* Centraliza a imagem dentro do contêiner */
+}
+
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>BACKEND DEVELOPER</h1>
+    </header>
+    
+    <div class="container">
+        <!-- Área 1: Meus Dados -->
+        <section class="section">
+            <h2>Converter</h2>
+            <p> O Converter é um programa desenvolvido para transformar arquivos no formato .log em arquivos 
+                .pqr e também gera dois arquivos auxiliares: charges_atoms.log e xyz.log. O primeiro contém os átomos 
+                e suas respectivas cargas, enquanto o segundo armazena as coordenadas extraídas do arquivo .log. É 
+                um programa voltado para análises na área da química computacional, para agilizar o processo de montagem
+                do arquivo .pqr utilizado em softwares de cálculo de ccs. Sua execução é direto no terminal
+                exigindo do usuário um conhecimento prévio do uso do Linux.
+            </section>
+            
+    <div class="container">
+        <section class="section">
+            <h2>Arquivo</h2>
+            <p>Ao fazer o Download do programa ele virá em um arquivo.zip, basta extrair e será obtido 
+                os seguintes arquivos:
+            </p>
+                   <img src="imagens/arquivosconv.png" alt="arquivosconv">
+            <p> Temos as pastas inputs e outputs, que são utilizadas para o armazenamento dos arquivos. Temos também
+                a pasta de intruções, que tem as intruções em inglês e em português. Por fim temos o arquivo 
+                converter.cpp e seu respectivo executável, o converter. Para efeito de calibração do aplicativo, isto é,
+                para que o usuário saiba que foi corretamente instalado, temos um arquivo .log de calibração.           </p>
+    </div>
+
+    <div class="container">
+        <section class="section">
+            <h2>Execução</h2>
+            <p> Para a execução do aplicativo é dado o comando ./converter + nome do .log, no caso da imagem abaixo 
+                foi utilizado o input de calibração como teste.
+
+            </p>
+            <img src="imagens/comandoconv.png" alt="comandoconv">
+    </div>
+
+    <div class="container">
+        <section class="section">
+            <h2>Resultado</h2>
+            <p>Após a execução obtemos as cargas e as coordenadas atômicas das moléculas que foram extraídas 
+                do .log e temos o arquivo output.pqr é o arquivo que é utilizado para o cálculo de ccs.
+            </p>
+            <img src="imagens/finalconv.png" alt="finalconv">
+    
+
+    
+            <a href="index.html" class="button">Voltar para a página inicial</a>
+            <a href="converter.html" class="button">Voltar ao topo</a>
+            <a href="https://github.com/LLommez/converter" class="button" target="_blank" rel="noopener noreferrer">Quero este app!</a>
+
+    </div>
+    
+    <a href="https://wa.me/5537984269756" class="whatsapp-button" target="_blank"></a>
+    
+    
